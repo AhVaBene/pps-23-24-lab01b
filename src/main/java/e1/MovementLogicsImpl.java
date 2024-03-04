@@ -25,24 +25,16 @@ public class MovementLogicsImpl implements MovementLogics {
     }
 
     @Override
-    public void setKnightPosition(Pair<Integer, Integer> knightPosition) {
-        this.knightPosition = knightPosition;
-    }
+    public void setKnightPosition(Pair<Integer, Integer> knightPosition) { this.knightPosition = knightPosition; }
 
     @Override
-    public Pair<Integer, Integer> getKnightPosition() {
-        return this.knightPosition;
-    }
+    public Pair<Integer, Integer> getKnightPosition() { return this.knightPosition; }
 
     @Override
-    public void setPawnPosition(Pair<Integer, Integer> pawnPosition) {
-        this.pawnPosition = pawnPosition;
-    }
+    public void setPawnPosition(Pair<Integer, Integer> pawnPosition) { this.pawnPosition = pawnPosition; }
 
     @Override
-    public Pair<Integer, Integer> getPawnPosition() {
-        return this.pawnPosition;
-    }
+    public Pair<Integer, Integer> getPawnPosition() { return this.pawnPosition; }
 
     @Override
     public void moveKnight(int row, int col) {
@@ -54,7 +46,5 @@ public class MovementLogicsImpl implements MovementLogics {
     }
 
     @Override
-    public boolean hasHit() {
-        return this.knightPosition.equals(this.pawnPosition);
-    }
+    public boolean hasHit() { return this.knightPosition.equals(this.pawnPosition); }
 }

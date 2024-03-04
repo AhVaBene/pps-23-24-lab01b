@@ -8,5 +8,4 @@ public interface MovementLogics {
     public Pair<Integer, Integer> getPawnPosition();
     public void moveKnight(int row, int col);
     public boolean hasHit();
-
 }
